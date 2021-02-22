@@ -1,1 +1,119 @@
+using System;
 
+namespace Biblio
+{
+    class Livre
+    {
+        public int Id;
+        public string Auteur;
+        public string Name;
+        public Livre(int id, string auteur, string name)
+        {
+            Id=id;
+            Auteur=auteur;
+            Name=name;
+        }
+        ~Livre()
+        {
+            Console.Writeline("destructor called")
+        }
+    }
+    class Exemplaire
+    {
+        public int Id;
+        public int Num;
+        public string Etat;*
+        public int Age;
+        public Exemplaire(int id, int num, string etat, int age)
+        {
+            Id=id;
+            Num=num;
+            Etat=etat;
+            Age=age;
+        }
+        public Enprunt()
+        {
+            Etat="inexist"
+        }
+        public Recuperer()
+        {
+            etat="exist"
+        }
+        ~Exemplaire()
+        {
+            Console.Writeline("exemplaire est archivé")
+        }
+    }
+    class Client
+    {
+        public int Id;
+        public string Nom;
+        public string Prenom;
+        public string Adress;
+        public Client(int id, string nom, string prenom, string add)
+        {
+            Id=id;
+            Nom=nom;
+            Prenom=prenom;
+            Adress=add;
+        }
+        public Lower(int id_exe)
+        {
+            int flag=1;
+            while (int p=0; flag=1 || p=100;p++){
+                if (Exemplaire.Id=id_exe){
+                    Exemplaire.Enprunt();
+                    flag=0;
+                }
+            }
+        }
+        public payer()
+        {
+
+        }
+        public exclus()
+        {
+            ~Client()
+            {
+                Console.Writeline("ce client été exclus")
+            }
+        }
+    }
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        private void AjoutExe_click(objet sender, EventArgs e)
+        {
+            new Exemplaire();
+        }
+        private void SuppExe_click(objet sender, EventArgs e)
+        {
+            ~Exemplaire();
+        }
+        private void EnprExe_click(objet sender, EventArgs e)
+        {
+            this Exemplaire.Enprunt();
+        }
+        private void CheckAge_click(objet sender, EventArgs e)
+        {
+            if(this Exemplaire.Age>8){
+                MessageBox.Show("ce exemplaire doit etre archivé");
+                ~Exemplaire();
+            }else
+            {
+                MessageBox.Show("ce exmplaire peux encore étre utilisé");
+            }
+        }
+
+    }
+    class program
+    {
+        static void Main(srting[] args)
+        {
+            
+        }
+    }
+}
